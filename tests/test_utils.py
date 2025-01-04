@@ -1,8 +1,8 @@
 """Tests for utils.py."""
 from unittest import TestCase
-from intellifire4py.utils import _range_check
-from intellifire4py.const import IntelliFireCommand
-from intellifire4py.exceptions import InputRangError
+from haext_intellifire4py.utils import _range_check
+from haext_intellifire4py.const import IntelliFireCommand
+from haext_intellifire4py.exceptions import InputRangError
 
 
 class TestRangeCheck(TestCase):

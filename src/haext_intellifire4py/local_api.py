@@ -10,7 +10,7 @@ import logging
 
 from aiohttp import ClientSession, ClientTimeout
 
-from intellifire4py.model import (
+from haext_intellifire4py.model import (
     IntelliFirePollData,
 )
 

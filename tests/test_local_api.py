@@ -6,11 +6,11 @@ from json import JSONDecodeError
 import aiohttp
 import pytest
 
-from intellifire4py import UnifiedFireplace
-from intellifire4py.cloud_interface import IntelliFireCloudInterface
-from intellifire4py.const import IntelliFireCommand
-from intellifire4py.exceptions import InputRangError
-from intellifire4py.local_api import IntelliFireAPILocal
+from haext_intellifire4py import UnifiedFireplace
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface
+from haext_intellifire4py.const import IntelliFireCommand
+from haext_intellifire4py.exceptions import InputRangError
+from haext_intellifire4py.local_api import IntelliFireAPILocal
 from aioresponses import aioresponses
 
 IP = "192.168.1.69"

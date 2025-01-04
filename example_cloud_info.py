@@ -8,9 +8,9 @@ import aiohttp  # type: ignore[import-not-found]
 from rich import print  # type: ignore[import-not-found]
 from rich.logging import RichHandler  # type: ignore[import-not-found]
 
-from intellifire4py import UnifiedFireplace  # type: ignore[import-not-found]
-from intellifire4py.cloud_interface import IntelliFireCloudInterface  # type: ignore[import-not-found]
-from intellifire4py.const import IntelliFireApiMode
+from haext_intellifire4py import UnifiedFireplace  # type: ignore[import-not-found]
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface  # type: ignore[import-not-found]
+from haext_intellifire4py.const import IntelliFireApiMode
 
 FORMAT = "%(message)s"
 logging.basicConfig(

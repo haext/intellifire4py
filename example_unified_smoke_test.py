@@ -4,9 +4,9 @@ import os
 
 from rich import print
 
-from intellifire4py import UnifiedFireplace
-from intellifire4py.cloud_interface import IntelliFireCloudInterface
-from intellifire4py.const import IntelliFireApiMode
+from haext_intellifire4py import UnifiedFireplace
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface
+from haext_intellifire4py.const import IntelliFireApiMode
 
 import logging
 

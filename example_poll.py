@@ -4,7 +4,7 @@ import asyncio
 import logging
 import os
 
-from intellifire4py.local_api import IntelliFireAPILocal
+from haext_intellifire4py.local_api import IntelliFireAPILocal
 
 
 logging.basicConfig(level=logging.DEBUG)

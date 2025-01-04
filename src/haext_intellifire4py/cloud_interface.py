@@ -11,13 +11,13 @@ from .const import USER_AGENT
 
 from aiohttp import ClientSession
 
-from intellifire4py import (
+from haext_intellifire4py import (
     IntelliFireAPICloud,
     IntelliFireLocations,
     IntelliFireFireplaces,
 )
-from intellifire4py.exceptions import LoginError
-from intellifire4py.model import IntelliFireUserData, IntelliFireCommonFireplaceData
+from haext_intellifire4py.exceptions import LoginError
+from haext_intellifire4py.model import IntelliFireUserData, IntelliFireCommonFireplaceData
 
 
 class IntelliFireCloudInterface:
