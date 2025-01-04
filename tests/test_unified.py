@@ -5,9 +5,9 @@ import pytest
 
 from aiohttp import ClientError
 
-from intellifire4py import UnifiedFireplace
-from intellifire4py.cloud_interface import IntelliFireCloudInterface
-from intellifire4py.const import IntelliFireApiMode
+from haext_intellifire4py import UnifiedFireplace
+from haext_intellifire4py.cloud_interface import IntelliFireCloudInterface
+from haext_intellifire4py.const import IntelliFireApiMode
 
 
 @pytest.mark.asyncio
@@ -107,7 +107,7 @@ async def test_unified_connectivity(mock_cloud_login_flow_connectivity_testing):
 @pytest.mark.asyncio
 async def test_connectivity_cloud_only(mock_common_data_local, mock_background_polling):
     """Test connectivity."""
-    with patch("intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
+    with patch("haext_intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
         m.return_value = (False, True)
 
         fp = await UnifiedFireplace.build_fireplace_from_common(mock_common_data_local)
@@ -119,7 +119,7 @@ async def test_connectivity_cloud_only(mock_common_data_local, mock_background_p
 @pytest.mark.asyncio
 async def test_connectivity_local_only(mock_common_data_local, mock_background_polling):
     """Test connectivity."""
-    with patch("intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
+    with patch("haext_intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
         m.return_value = (True, False)
 
         fp = await UnifiedFireplace.build_fireplace_from_common(mock_common_data_local)
@@ -131,7 +131,7 @@ async def test_connectivity_local_only(mock_common_data_local, mock_background_p
 @pytest.mark.asyncio
 async def test_connectivity_none(mock_common_data_local, mock_background_polling):
     """Test connectivity."""
-    with patch("intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
+    with patch("haext_intellifire4py.UnifiedFireplace.async_validate_connectivity") as m:
         m.return_value = (False, False)
 
         with pytest.raises(ClientError) as ex:

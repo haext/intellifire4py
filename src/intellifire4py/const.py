@@ -6,8 +6,8 @@ from aenum import MultiValueEnum  # type: ignore
 
 import importlib.metadata
 
-PACKAGE_VERSION = importlib.metadata.version("intellifire4py")
-USER_AGENT = f"intellifire4py/{PACKAGE_VERSION}"
+PACKAGE_VERSION = importlib.metadata.version("haext_intellifire4py")
+USER_AGENT = f"haext_intellifire4py/{PACKAGE_VERSION}"
 
 
 class IntelliFireApiMode(Enum):

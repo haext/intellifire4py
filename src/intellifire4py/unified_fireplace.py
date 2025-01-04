@@ -6,17 +6,17 @@ import asyncio
 import aiohttp
 from aiohttp import ClientConnectionError, ClientResponseError
 
-from intellifire4py import IntelliFireAPILocal, IntelliFireAPICloud
-from intellifire4py.const import IntelliFireApiMode
-from intellifire4py.control import IntelliFireController
-from intellifire4py.model import (
+from haext_intellifire4py import IntelliFireAPILocal, IntelliFireAPICloud
+from haext_intellifire4py.const import IntelliFireApiMode
+from haext_intellifire4py.control import IntelliFireController
+from haext_intellifire4py.model import (
     IntelliFireCommonFireplaceData,
     IntelliFirePollData,
     IntelliFireUserData,
 )
 from rich import inspect
 
-from intellifire4py.read import IntelliFireDataProvider
+from haext_intellifire4py.read import IntelliFireDataProvider
 
 from typing import cast
 from typing import Any

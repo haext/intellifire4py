@@ -2,7 +2,7 @@
 import asyncio
 import logging
 
-from intellifire4py.udp import UDPFireplaceFinder
+from haext_intellifire4py.udp import UDPFireplaceFinder
 
 
 logging.basicConfig(level=logging.DEBUG)

@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "intellifire4py"
-version = "4.1.10"
-description = "Intellifire4Py"
-authors = ["Jeff Stein <jeffstein@gmail.com>"]
+name = "haext_intellifire4py"
+version = "4.1.11"
+description = "HAExt Intellifire4Py"
+authors = ["Jeff Stein <jeffstein@gmail.com>", "Greg Gibeling <gdgib@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/jeeftor/intellifire4py"
-repository = "https://github.com/jeeftor/intellifire4py"
+homepage = "https://github.com/haext/intellifire4py"
+repository = "https://github.com/haext/intellifire4py"
 documentation = "https://intellifire4py.readthedocs.io"
 classifiers = ["Development Status :: 5 - Production/Stable",
 
@@ -21,8 +21,8 @@ create = true
 in-project = true
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/jeeftor/intellifire4py/issues"
-Changelog = "https://github.com/jeeftor/intellifire4py/releases"
+"Bug Tracker" = "https://github.com/haext/intellifire4py/issues"
+Changelog = "https://github.com/haext/intellifire4py/releases"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -75,7 +75,7 @@ tests = ["tests", "*/tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["intellifire4py", "tests"]
+source = ["haext_intellifire4py", "tests"]
 
 [tool.coverage.report]
 show_missing = true

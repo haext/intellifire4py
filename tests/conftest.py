@@ -9,8 +9,8 @@ from unittest.mock import patch
 import pytest
 from aioresponses import aioresponses
 
-from intellifire4py.const import IntelliFireApiMode
-from intellifire4py.model import IntelliFireCommonFireplaceData, IntelliFireUserData
+from haext_intellifire4py.const import IntelliFireApiMode
+from haext_intellifire4py.model import IntelliFireCommonFireplaceData, IntelliFireUserData
 
 
 # Define fixtures for various test scenarios.
@@ -412,22 +412,22 @@ def mock_background_polling() -> Generator:
     """Fixture for mocking background polling."""
     with ExitStack() as stack:
         local_stop_mock = stack.enter_context(
-            patch("intellifire4py.IntelliFireAPILocal.stop_background_polling")
+            patch("haext_intellifire4py.IntelliFireAPILocal.stop_background_polling")
         )
         cloud_stop_mock = stack.enter_context(
-            patch("intellifire4py.IntelliFireAPICloud.stop_background_polling")
+            patch("haext_intellifire4py.IntelliFireAPICloud.stop_background_polling")
         )
         # abstract_stop_mock = stack.enter_context(
-        #     patch("intellifire4py.IntelliFireDataProvider.stop_background_polling")
+        #     patch("haext_intellifire4py.IntelliFireDataProvider.stop_background_polling")
         # )
         local_start_mock = stack.enter_context(
-            patch("intellifire4py.IntelliFireAPILocal.start_background_polling")
+            patch("haext_intellifire4py.IntelliFireAPILocal.start_background_polling")
         )
         cloud_start_mock = stack.enter_context(
-            patch("intellifire4py.IntelliFireAPICloud.start_background_polling")
+            patch("haext_intellifire4py.IntelliFireAPICloud.start_background_polling")
         )
         # abstract_start_mock = stack.enter_context(
-        #     patch("intellifire4py.IntelliFireDataProvider.start_background_polling")
+        #     patch("haext_intellifire4py.IntelliFireDataProvider.start_background_polling")
         # )
 
         yield {

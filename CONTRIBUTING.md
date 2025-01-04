@@ -12,9 +12,9 @@ Here is a list of important resources for contributors:
 - [Code of Conduct]
 
 [mit license]: https://opensource.org/licenses/MIT
-[source code]: https://github.com/jeeftor/intellifire4py
+[source code]: https://github.com/haext/intellifire4py
 [documentation]: https://intellifire4py.readthedocs.io/
-[issue tracker]: https://github.com/jeeftor/intellifire4py/issues
+[issue tracker]: https://github.com/haext/intellifire4py/issues
 
 ## How to report a bug
 
