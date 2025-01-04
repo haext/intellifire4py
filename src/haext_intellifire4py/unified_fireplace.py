@@ -122,9 +122,9 @@ class UnifiedFireplace:
         timeout_seconds (float): The timeout in seconds for the cloud poll request.
         """
         if self.read_mode == IntelliFireApiMode.LOCAL:
-            return self.perform_local_poll(timeout_seconds)
+            await self.perform_local_poll(timeout_seconds)
         else:
-            return self.perform_cloud_poll(timeout_seconds)
+            await self.perform_cloud_poll(timeout_seconds)
 
     @property
     def is_cloud_polling(self) -> bool:
